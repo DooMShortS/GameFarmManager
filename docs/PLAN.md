@@ -407,11 +407,11 @@ You handle models/rigging externally; the project provides the **pipeline**:
 - [x] Initialize git + push to GitHub (`DooMShortS/GameFarmManager`)
 - [x] Folder structure: `Content/GameFarm/{Core,Tutorial,Farm,Missions,Wildlife,Hunting,Gear,Visitors,UI,Audio,Materials}`
 - [x] Evolve template classes → `GameFarm*` framework (extend existing `GameFarmManagerCharacter`, etc.)
-- [ ] **Hybrid camera stub:** FP default + spring-arm TP on toggle; extend `GameFarmManagerCameraManager`
+- [x] **Hybrid camera stub:** FP default + spring-arm TP on toggle; extend `GameFarmManagerCameraManager`
 - [ ] Reuse `Variant_Shooter` as rifle/projectile reference until dedicated hunting weapons exist
-- [ ] Enhanced Input: move, look, interact, optional `IA_ToggleCamera`
+- [ ] Enhanced Input: move, look, interact, optional `IA_ToggleCamera` (move/look/toggle wired in C++; `IA_ToggleCamera` asset still needs creating in editor; interact not started)
 - [ ] Cartoon material master + test level lighting
-- [ ] Profile save subsystem (`UGameFarmSaveGame`: tutorial flag, farm library index)
+- [x] Profile save subsystem (`UGameFarmSaveGame`: tutorial flag, farm library index)
 - [ ] `ASoloGameMode` — offline farm load, auto-save on interval + at tents/farmhouse
 
 ### Phase 1 — Story Tutorial (Week 2–4)
