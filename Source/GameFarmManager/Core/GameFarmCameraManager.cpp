@@ -1,6 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "GameFarmCameraManager.h"
+#include "GameFarmCharacter.h"
+#include "GameFramework/PlayerController.h"
 
 AGameFarmCameraManager::AGameFarmCameraManager()
 {
@@ -20,5 +22,11 @@ void AGameFarmCameraManager::SetViewMode(EGameFarmCameraViewMode NewViewMode)
 
 void AGameFarmCameraManager::OnViewModeChanged_Implementation(EGameFarmCameraViewMode NewViewMode)
 {
-	// stub
+	if (APlayerController* PC = GetOwningPlayerController())
+	{
+		if (AGameFarmCharacter* FarmCharacter = Cast<AGameFarmCharacter>(PC->GetPawn()))
+		{
+			FarmCharacter->SetCameraViewMode(NewViewMode);
+		}
+	}
 }
