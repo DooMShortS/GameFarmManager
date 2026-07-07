@@ -27,6 +27,7 @@ public class GameFarmManager : ModuleRules
 			"GameFarmManager",
 			"GameFarmManager/Core",
 			"GameFarmManager/Tutorial",
+			"GameFarmManager/Farm",
 			"GameFarmManager/Variant_Horror",
 			"GameFarmManager/Variant_Horror/UI",
 			"GameFarmManager/Variant_Shooter",
