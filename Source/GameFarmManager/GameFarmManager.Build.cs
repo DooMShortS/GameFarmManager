@@ -26,6 +26,7 @@ public class GameFarmManager : ModuleRules
 		PublicIncludePaths.AddRange(new string[] {
 			"GameFarmManager",
 			"GameFarmManager/Core",
+			"GameFarmManager/Tutorial",
 			"GameFarmManager/Variant_Horror",
 			"GameFarmManager/Variant_Horror/UI",
 			"GameFarmManager/Variant_Shooter",
