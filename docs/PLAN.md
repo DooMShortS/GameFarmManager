@@ -404,9 +404,9 @@ You handle models/rigging externally; the project provides the **pipeline**:
 ### Phase 0 — Foundation (Week 1–2)
 - [x] Create UE 5.7 C++ First Person project `GameFarmManager`
 - [x] Add `.gitignore` for UE
-- [ ] Initialize git + push to GitHub (`DooMShortS/GameFarmManager`)
-- [ ] Folder structure: `Content/GameFarm/{Core,Tutorial,Farm,Missions,Wildlife,Hunting,Gear,Visitors,UI,Audio,Materials}`
-- [ ] Evolve template classes → `GameFarm*` framework (extend existing `GameFarmManagerCharacter`, etc.)
+- [x] Initialize git + push to GitHub (`DooMShortS/GameFarmManager`)
+- [x] Folder structure: `Content/GameFarm/{Core,Tutorial,Farm,Missions,Wildlife,Hunting,Gear,Visitors,UI,Audio,Materials}`
+- [x] Evolve template classes → `GameFarm*` framework (extend existing `GameFarmManagerCharacter`, etc.)
 - [ ] **Hybrid camera stub:** FP default + spring-arm TP on toggle; extend `GameFarmManagerCameraManager`
 - [ ] Reuse `Variant_Shooter` as rifle/projectile reference until dedicated hunting weapons exist
 - [ ] Enhanced Input: move, look, interact, optional `IA_ToggleCamera`
