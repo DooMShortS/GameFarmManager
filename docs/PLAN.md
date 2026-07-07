@@ -412,7 +412,7 @@ You handle models/rigging externally; the project provides the **pipeline**:
 - [ ] Enhanced Input: move, look, interact, optional `IA_ToggleCamera` (move/look/toggle wired in C++; `IA_ToggleCamera` asset still needs creating in editor; interact not started)
 - [ ] Cartoon material master + test level lighting
 - [x] Profile save subsystem (`UGameFarmSaveGame`: tutorial flag, farm library index)
-- [ ] `ASoloGameMode` — offline farm load, auto-save on interval + at tents/farmhouse
+- [ ] `ASoloGameMode` — offline farm load, auto-save on interval + at tents/farmhouse (interval autosave + profile load/save done; farm world load blocked on Phase 2, tent/farmhouse-triggered save blocked on Phase 5)
 
 ### Phase 1 — Story Tutorial (Week 2–4)
 - [ ] `ATutorialGameMode` + tutorial sub-level (training plot, mentor NPC placeholder)
