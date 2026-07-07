@@ -423,15 +423,15 @@ You handle models/rigging externally; the project provides the **pipeline**:
 - [x] Skip tutorial option for dev / returning players with flag set
 
 ### Phase 2 — Farm World Generator (Week 4–8)
-- [ ] `UFarmWorldProfile` struct: zones, perimeter points, splines, seed, farmhouse transform
+- [x] `UFarmWorldProfile` struct: zones, perimeter points, splines, seed, farmhouse transform
 - [ ] Regional map UI: zone selection (click adjacent biome cells)
-- [ ] Perimeter editor: polygon draw on map → validate area bounds from zone count
-- [ ] Farmhouse placer: raycast on preview terrain, snap rules
-- [ ] Road / footpath spline tools (width, material type, navmesh influence)
-- [ ] Random seed field → PCG or scatter pass for trees/rocks
+- [ ] Perimeter editor: polygon draw on map → validate area bounds from zone count (point-in-polygon + shoelace area math done in `UFarmWorldGeneratorSubsystem`; map draw UI and zone-count-based area bounds not started — no `ZoneData` class yet)
+- [ ] Farmhouse placer: raycast on preview terrain, snap rules (`ValidateFarmhousePlacement()` perimeter check done; raycast/snap UI not started)
+- [ ] Road / footpath spline tools (width, material type, navmesh influence) (`FFarmSplinePath` data struct exists; no editing tools)
+- [ ] Random seed field → PCG or scatter pass for trees/rocks (`GenerateScatterPoints()` seeded rejection-sampling done in C++; no PCG wiring or UI field)
 - [ ] 3D preview mode — **orbit / third-person overview camera** for WYSIWYG layout
 - [ ] **Bake pipeline:** profile → landscape + boundary volume + splines + foliage
-- [ ] Save farm to player library; load for solo offline play
+- [ ] Save farm to player library; load for solo offline play (`SaveWorkingProfile()` persists a profile to a slot; no library indexing or load-for-play flow yet)
 - [ ] Solo game mode: load profile, spawn player at farmhouse, **restore mission/season state**
 
 ### Phase 3 — Wildlife & Hunting Core (Week 8–12)
