@@ -415,12 +415,12 @@ You handle models/rigging externally; the project provides the **pipeline**:
 - [ ] `ASoloGameMode` — offline farm load, auto-save on interval + at tents/farmhouse (interval autosave + profile load/save done; farm world load blocked on Phase 2, tent/farmhouse-triggered save blocked on Phase 5)
 
 ### Phase 1 — Story Tutorial (Week 2–4)
-- [ ] `ATutorialGameMode` + tutorial sub-level (training plot, mentor NPC placeholder)
-- [ ] `UTutorialSubsystem` — beat index, objective UI, completion flag
-- [ ] `UTutorialBeatData` assets for 5 core beats (dialog text, trigger volumes, sequence refs)
+- [ ] `ATutorialGameMode` + tutorial sub-level (C++ class done; tutorial sub-level, training plot, mentor NPC placeholder need the editor)
+- [ ] `UTutorialSubsystem` — beat index, objective UI, completion flag (beat index + completion done in C++; objective UI widget not started)
+- [ ] `UTutorialBeatData` assets for 5 core beats (dialog text, trigger volumes, sequence refs) (C++ data asset class done; no actual beat asset instances created yet — editor work)
 - [ ] Guided interactions: move, interact, binoculars prompt, practice range
-- [ ] On complete: set `bTutorialComplete`, travel to World Generator map
-- [ ] Skip tutorial option for dev / returning players with flag set
+- [x] On complete: set `bTutorialComplete`, travel to World Generator map
+- [x] Skip tutorial option for dev / returning players with flag set
 
 ### Phase 2 — Farm World Generator (Week 4–8)
 - [ ] `UFarmWorldProfile` struct: zones, perimeter points, splines, seed, farmhouse transform
